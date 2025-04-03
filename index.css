@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply transition-colors duration-200;
+  }
+}
+
+.dark ::selection {
+  @apply bg-indigo-500/30 text-white;
+}
+
+.glass-effect {
+  @apply backdrop-blur-xl bg-white/80 dark:bg-dark-surface-light/80;
+}
+
+.card-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.1) 0%,
+    rgba(99, 102, 241, 0.05) 100%
+  );
+}
